@@ -41,7 +41,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -51,11 +50,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -73,7 +73,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(275, 37);
             this.button1.TabIndex = 0;
-            this.button1.Text = "DOSYA SEÇ";
+            this.button1.Text = "SELECT FILE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -86,7 +86,7 @@
             this.groupBox1.Size = new System.Drawing.Size(342, 307);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dosya Seç";
+            this.groupBox1.Text = "Select File";
             // 
             // axWindowsMediaPlayer1
             // 
@@ -121,16 +121,16 @@
             this.groupBox2.Size = new System.Drawing.Size(434, 307);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Seçenekler";
+            this.groupBox2.Text = "Options";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(99, 126);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 13);
+            this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 16;
-            this.label6.Text = ". saniyedeki ekran görüntüsünü al";
+            this.label6.Text = " second";
             // 
             // textBox6
             // 
@@ -144,10 +144,10 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(7, 120);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 17);
+            this.radioButton4.Size = new System.Drawing.Size(35, 17);
             this.radioButton4.TabIndex = 14;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Tam";
+            this.radioButton4.Text = "At";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -155,9 +155,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(154, 73);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 13);
+            this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 13;
-            this.label5.Text = ". saniyeye kadar";
+            this.label5.Text = ". seconds";
             // 
             // textBox5
             // 
@@ -173,37 +173,28 @@
             this.textBox4.Size = new System.Drawing.Size(32, 20);
             this.textBox4.TabIndex = 11;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(154, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = ". saniyeye kadar";
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(28, 246);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(275, 37);
             this.button2.TabIndex = 9;
-            this.button2.Text = "BAŞLAT";
+            this.button2.Text = "START PROCESS";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(306, 103);
+            this.label3.Location = new System.Drawing.Point(285, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "saniye aralıklarla";
+            this.label3.Text = "seconds interval";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(268, 100);
+            this.textBox3.Location = new System.Drawing.Point(247, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(32, 20);
             this.textBox3.TabIndex = 7;
@@ -213,9 +204,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(215, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "arasında";
+            this.label2.Text = "with";
             // 
             // textBox2
             // 
@@ -229,9 +220,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(154, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
+            this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "ile";
+            this.label1.Text = "and";
             // 
             // textBox1
             // 
@@ -245,10 +236,10 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(6, 96);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(107, 17);
+            this.radioButton3.Size = new System.Drawing.Size(67, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Belirttiğim Aralıkta";
+            this.radioButton3.Text = "Between";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -256,22 +247,11 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(6, 68);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(86, 17);
+            this.radioButton2.Size = new System.Drawing.Size(115, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Çift Saniyeler";
+            this.radioButton2.Text = "Even seconds until";
             this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 40);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(90, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tek Saniyeler";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -291,7 +271,7 @@
             this.groupBox3.Size = new System.Drawing.Size(782, 277);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "İŞLEMLER";
+            this.groupBox3.Text = "PROCESSES";
             // 
             // pictureBox1
             // 
@@ -306,6 +286,26 @@
             // backgroundWorker1
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 40);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(110, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Odd seconds until";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(154, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = ". seconds";
             // 
             // Form1
             // 
@@ -343,10 +343,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -356,6 +354,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

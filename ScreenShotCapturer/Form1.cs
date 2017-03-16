@@ -84,7 +84,7 @@ namespace ScreenShotCapturer
 
             if (!proc.Start())
             {
-                Console.WriteLine("Hata!");
+                Console.WriteLine("Error!");
                 return;
             }
             StreamReader reader = proc.StandardError;
@@ -137,13 +137,13 @@ namespace ScreenShotCapturer
                         captureScreenShot(Convert.ToInt32(textBox6.Text), (Convert.ToInt32(textBox6.Text) + 1), 1, sFileName, justFileName, videoDuration);
                         break;
                     default:
-                        MessageBox.Show("Seçilmedi");
+                        MessageBox.Show("There is no selection");
                         break;
                 }
             }
             else
             {
-                MessageBox.Show("Seçilmedi");
+                MessageBox.Show("There is no selection");
             }
         }
     }
