@@ -6,9 +6,13 @@ Screenshot Capturer With FFmpeg
 And have 4 modes for getting screenshots, these are;
 
 **Capture only odd seconds**
+
 **Capture only even seconds**
+
 **Capture between two seconds with stated intervals**
+
 **Capture at specific second's screenshot**
+
 
 *After creating screenshots, you can see their names in list and you can see content by clicking item in the list*
 
