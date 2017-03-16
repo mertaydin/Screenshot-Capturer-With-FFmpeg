@@ -3,7 +3,7 @@ Screenshot Capturer With FFmpeg
 
 **This program is actually for capturing screenshots from any video you selected.**
 
-And has 4 modes for getting screenshots, these are;
+And have 4 modes for getting screenshots, these are;
 
 **Capture only odd seconds**
 **Capture only even seconds**
