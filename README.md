@@ -19,3 +19,5 @@ And have 4 modes for getting screenshots, these are;
 *was written in c#, used FFmpeg*
 
 **You can fork and make pull request for improving FFmpeg commands ,parameters or any other things**
+
+![Screenshot Capturer](https://raw.githubusercontent.com/mertaydin/Screenshot-Capturer-With-FFmpeg/master/ffmpeg.PNG)
